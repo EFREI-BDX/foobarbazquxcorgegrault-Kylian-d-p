@@ -6,8 +6,8 @@ public class Foo {
 
     private final ArrayList<Baz> bazs;
     private final ArrayList<Grault> graults;
-    private Bar bar;
-    private Qux qux;
+    private final Bar bar;
+    private final Qux qux;
     private Corge corge;
 
     public Foo(Bar bar) {
