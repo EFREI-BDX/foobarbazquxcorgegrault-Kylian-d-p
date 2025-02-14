@@ -12,6 +12,8 @@ public class Corge {
     }
 
     public void setFoo(Foo foo) {
+        this.foo.setCorge(null);
         this.foo = foo;
+        foo.setCorge(this);
     }
 }
