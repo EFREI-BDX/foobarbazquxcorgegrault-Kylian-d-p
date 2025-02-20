@@ -35,9 +35,13 @@ public class Foo {
     }
 
     public void setCorge(Corge corge) {
-        this.corge.setFoo(null);
+        if (this.corge != null) {
+            this.corge.setFoo(null);
+        }
         this.corge = corge;
-        corge.setFoo(this);
+        if (this.corge.getFoo() != this) {
+            this.corge.setFoo(this);
+        }
     }
 
     public ArrayList<Grault> getGraults() {
